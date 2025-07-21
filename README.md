@@ -1,7 +1,14 @@
 # Hazily OS
 This project is my exploration into the world of OS development. Using OSDev as a guide, I am trying to create a simple OS, learn about Kernel development and deep dive into the world of low-level programming.
 
-## How to build?
+## Building
+## Prerequisites
+A cross compiler is required to build the kernel. The required packages are:
+- `gcc`
+- `binutils`
+
+These need to be built for the target architecture. The target of this project is 32 bit x86, more specifically i686-elf.
+
 ### With Make
 ```bash
 make
@@ -9,14 +16,7 @@ make
 
 That's it! The above command will build the kernel and create a bootable ISO image.
 
-## Without Make
-#### Cross Compiler
-A cross compiler is required to build the kernel. The required packages are:
-- `gcc`
-- `binutils`
-
-These need to be built for the target architecture. The target of this project is 32 bit x86, more specifically i686-elf.
-
+### Without Make
 #### Assembling boot.s
 ```bash
 i686-elf-as -o boot.o boot.s
