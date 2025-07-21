@@ -46,4 +46,4 @@ grub-mkrescue -o hazily.iso isodir
 qemu-system-i386 -cdrom hazily.iso
 ```
 
-![First Boot](./hazily_first_boot.png)](hazily_first_boot.png)
+![First Boot](./hazily_first_boot.png)
