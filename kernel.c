@@ -103,6 +103,6 @@ void kernel_main(void) {
   terminal_initialize();
 
   terminal_writestring("Hello, World!\n");
-  terminal_writestring("Welcome to the Hazily!\n");
+  terminal_writestring("Welcome to the Hazily OS!\n");
   terminal_writestring("This is a simple VGA text mode example.\n");
 }
