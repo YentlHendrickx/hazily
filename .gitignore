@@ -1,3 +1,4 @@
-kernel.o
-boot.o
-hazily.bin
+isodir/
+*.bin
+*.iso
+*.o
